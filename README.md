@@ -4,7 +4,7 @@
 
 Send anything that self-destructs after one view. No accounts. No history. No screenshots.
 
-Live demo: https://yourusername.github.io/ghostnote/
+Live demo: https://gerhardbrits.github.io/ghostnote/
 
 ---
 
