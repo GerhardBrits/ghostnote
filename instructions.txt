@@ -1,0 +1,3 @@
+1. Upload all files to GitHub repo root
+2. Enable Pages in Settings > Pages > main / root
+3. Replace YOUR-LEMON-SQUEEZY-CHECKOUT in app.js with your real checkout URL

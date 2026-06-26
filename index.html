@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ghostnote — One-view secrets</title>
+<meta name="description" content="Send a link that self-destructs after one view. First 5 free, then $2.99/month.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👻</text></svg>">
+<style>
+:root{--bg:#0b0b12;--card:#141420;--text:#e8e8f0;--muted:#9aa0b2;--accent:#7c5cff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:var(--bg);color:var(--text);display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+.wrap{width:100%;max-width:720px}
+.card{background:var(--card);border-radius:20px;padding:28px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+h1{margin:0 0 8px;font-size:28px}h1 span{margin-right:8px}
+p.muted{color:var(--muted);margin:0 0 20px}
+textarea{width:100%;min-height:140px;background:#0f0f18;color:var(--text);border:1px solid #2a2a3f;border-radius:12px;padding:14px;font-size:16px;resize:vertical}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+button{background:var(--accent);color:white;border:0;border-radius:12px;padding:12px 18px;font-weight:600;cursor:pointer}
+button.secondary{background:#23233a}
+.small{font-size:13px;color:var(--muted);margin-top:10px}
+.linkbox{display:none;margin-top:16px;background:#0f0f18;border:1px dashed #3a3a5a;padding:14px;border-radius:12px;word-break:break-all}
+.counter{margin-top:8px;font-size:14px;color:var(--muted)}
+.paywall{display:none;margin-top:18px;padding:16px;background:#1a1428;border:1px solid #5a3cff;border-radius:12px}
+.paywall h3{margin:0 0 6px}
+a{color:#b8a6ff}
+footer{margin-top:22px;text-align:center;color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+<h1><span>👻</span>Ghostnote</h1>
+<p class="muted">WhatsApp is for chat. Ghostnote is for secrets. First 5 free, then $2.99/month.</p>
+<textarea id="msg" placeholder="Type your secret here..."></textarea>
+<div class="row">
+<button id="create">Create Ghost Link</button>
+<button id="clear" class="secondary">Clear</button>
+</div>
+<div class="counter" id="counter"></div>
+<div class="linkbox" id="linkbox"></div>
+<div class="paywall" id="paywall">
+<h3>You've used your 5 free ghosts</h3>
+<p class="muted">Unlock unlimited one-view secrets for $2.99/month. Cancel anytime.</p>
+<button onclick="window.open('https://YOUR-LEMON-SQUEEZY-CHECKOUT', '_blank')">Unlock Pro — $2.99/mo</button>
+<p class="small">Replace the link above with your Lemon Squeezy checkout URL in app.js</p>
+</div>
+<p class="small">No accounts. Encrypted in your browser. Opens once, then vanishes.</p>
+</div>
+<footer>Built by Gerhard Brits — Mtwara</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

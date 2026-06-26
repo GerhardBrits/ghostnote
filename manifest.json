@@ -1,0 +1,9 @@
+{
+  "name": "Ghostnote",
+  "short_name": "Ghostnote",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0b0b12",
+  "theme_color": "#7c5cff",
+  "icons": []
+}
